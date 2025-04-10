@@ -31,10 +31,10 @@ export default function Footer() {
           {/* Copyright & Credits */}
           <div className="flex flex-col sm:flex-row items-center justify-center text-rose-200/50 text-sm gap-2 sm:gap-4">
             <div>© {currentYear} s2vverse.in. All rights reserved.</div>
-            <div className="hidden sm:block">•</div>
-            <div className="flex items-center">
+            {/* <div className="hidden sm:block">•</div> */}
+            {/* <div className="flex items-center">
               Made with <Heart size={14} className="mx-1 text-rose-400" fill="currentColor" /> by <span className="ml-1 text-rose-300">Sameer</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

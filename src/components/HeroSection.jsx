@@ -93,7 +93,7 @@ export default function HeroSection() {
         
         {/* Subtext */}
         <p className="text-lg md:text-xl text-rose-100/80 mb-10 max-w-2xl mx-auto font-light">
-          A modern love-story social platform for the ones who felt it in silence.
+        A space where silence still means something.
         </p>
         
         {/* CTA Input + Button */}
