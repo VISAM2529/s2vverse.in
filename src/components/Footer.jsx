@@ -19,7 +19,7 @@ export default function Footer() {
           
           {/* Tagline */}
           <p className="text-rose-200/70 text-sm mb-8 max-w-md">
-            A modern love-story social platform for the ones who felt it in silence.
+           A space where silence still means something.
           </p>
           
           {/* Contact & Social */}
