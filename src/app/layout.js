@@ -23,7 +23,7 @@ const sora = Sora({
 
 export const metadata = {
   title: "s2vverse.in | We Never Spoke, But The Feed Knew",
-  description: "A modern love-story social platform for the ones who felt it in silence.",
+  description: "A space where silence still means something.",
   icons: {
     icon: [
       { url: "/logo.jpeg", type: "image/jpeg" },
