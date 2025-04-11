@@ -18,6 +18,8 @@
         |-- api
             |-- subscribe
                 |-- route.js
+            |-- track
+                |-- route.js
         |-- globals.css
         |-- layout.js
         |-- page.js
@@ -25,5 +27,10 @@
         |-- Features.jsx
         |-- Footer.jsx
         |-- HeroSection.jsx
+        |-- LocationTracker.js
         |-- Navbar.jsx
         |-- QuoteSection.jsx
+    |-- lib
+        |-- mongodb.js
+    |-- models
+        |-- Visitor.js

@@ -3,6 +3,7 @@ import { Sora } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import LocationTracker from "@/components/LocationTracker";
 
 // Font definitions
 const geistSans = Geist({
@@ -53,6 +54,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} antialiased font-sans`}
       >
         <Navbar/>
+        <LocationTracker/>
         {children}
         <Footer/>
       </body>
