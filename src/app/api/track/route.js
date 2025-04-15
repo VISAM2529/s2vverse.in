@@ -12,22 +12,37 @@ export async function POST(req) {
   try {
     await connectDB();
 
+    const body = await req.json();
+
     const forwarded = req.headers.get("x-forwarded-for");
     const ip = forwarded?.split(",")[0] || "0.0.0.0";
     const userAgent = req.headers.get("user-agent");
 
-    const geoRes = await fetch(`https://ipinfo.io/${ip}/json?token=0cedca615a1871`);
-    const geoData = await geoRes.json();
+    const {
+      latitude,
+      longitude,
+      ip: clientIp,
+      city,
+      region,
+      country,
+      location,
+      source,
+      time,
+    } = body;
 
-    const { city, region, country, loc } = geoData;
+    const loc = latitude && longitude
+      ? `${latitude},${longitude}`
+      : location || "";
 
     await Visit.create({
-      ip,
+      ip: clientIp || ip,
       city,
       region,
       country,
       location: loc,
       userAgent,
+      source: source || "unknown",
+      timestamp: time || new Date().toISOString(),
     });
 
     return NextResponse.json({ success: true });
